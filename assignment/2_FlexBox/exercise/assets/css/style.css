@@ -1,0 +1,90 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+/* Flexbox navigation */
+.navbar {
+  /* TODO: explain the purpose of the following properties */
+  /* display flex here sets the items inside the .navbar element to be flex items
+and sets the flex-direction of the .navbar element to row by default which makes
+its flex items align in a row side by side instead of in a column */
+  display: flex;
+
+  justify-content: center;
+  background-color: #007bff;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #0056b3;
+}
+
+/* Flexbox content area */
+.content {
+  /* TODO: explain the purpose of the following properties */
+  /* flex-wrap helps with responsive web dsign by ensuring that the flex-items inside the .content element
+  wrap to the next line when the container width becomes too small to contain its flex items.
+  */
+  flex-wrap: wrap;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: start;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  max-width: 1200px;
+}
+
+/* Flexbox items */
+.box {
+  background-color: #28a745;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+
+  /* TODO: explain the purpose of the following properties */
+  /* combined setter for 3 properties */
+  /* if you set the 1st property to 1  */
+  /* if you set the 1st property to 0  */
+  /* if you set the 2nd property to 1 */
+  /* if you set the 2nd property to 0  */
+  /* 1. flex-grow, 2. flex-shrink, 3. flex-basis */
+  /* 1. Flex-grow = A number specifying how much the item will grow relative to the rest of the flexible items */
+  /* 2. Flex-shrink = A number specifying how much the item will shrink relative to the rest of the flexible items*/
+  /* 3. Flex-basis = The length of the item. Allowed values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit */
+  flex: 0 1 300px;
+}
+
+.box:hover {
+  background-color: #218838;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+}

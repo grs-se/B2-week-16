@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+
+  /* TODO: what happens when we change this? */
+  /* column stacks items perpendicular to main axis */
+  flex-direction: row;
+  width: 80%;
+  height: 300px;
+  background-color: #ddd;
+  border: 2px solid #ccc;
+
+  /* Flexbox alignment properties */
+  justify-content: space-between;
+  /* space-between dynamically calculates equal spacing between flex items along the main axis of the current line inside the container, without adding spacing at the ends */
+  /* flex-start aligns items at the start of the main axis of the current line of the flex container, with no spacing between the items, no spacing before the items, with the end side containing all remaining spacing of the container width minus the combined widths of the flex item inside it */
+  /* center aligns items at the start of the main axis of the current line of the flex container */
+  /* TODO: flex-start, center, space-between */
+  /* TODO: flex-start, center, space-between */
+
+  align-items: center;
+
+  /* TODO: flex-start, center, flex-end */
+  /* aligns items at start of container */
+  /* Aligns flex items at the start of the cross axis of the current line of the flex container.
+  /* Aligns flex items at the start of the cross axis of the current line of the flex container.
+  /* Aligns flex items at the start of the cross axis of the current line of the flex container.
+ */
+}
+
+.box {
+  flex: 0 0 100px;
+  height: 100px;
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  font-size: 18px;
+}
